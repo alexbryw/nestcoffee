@@ -3,6 +3,16 @@
 
 Nest.JS Coffee API
 
+## New Project
+
+```bash
+npm i -g @nestjs/cli
+```
+
+```bash
+nest new 'projectName'
+```
+
 ## Project setup
 
 ```bash
