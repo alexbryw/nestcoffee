@@ -1,17 +1,6 @@
-
 ## Description
 
 Nest.JS Coffee API
-
-## New Project
-
-```bash
-npm i -g @nestjs/cli
-```
-
-```bash
-nest new 'projectName'
-```
 
 ## Project setup
 
@@ -45,8 +34,24 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## New Project
+
+```bash
+npm i -g @nestjs/cli
+```
+
+```bash
+nest new 'projectName'
+```
+
 ### New Controller
 
 ```bash
 nest generate controller
+```
+
+### New Service
+
+```bash
+nest generate service
 ```
