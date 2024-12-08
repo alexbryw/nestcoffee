@@ -44,6 +44,16 @@ npm i -g @nestjs/cli
 nest new 'projectName'
 ```
 
+### Extra packages for type validation
+
+```bash
+npm i class-validator class-transformer
+```
+
+```bash
+npm i @nestjs/mapped-types
+```
+
 ### New Controller
 
 ```bash
