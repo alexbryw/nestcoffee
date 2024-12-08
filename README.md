@@ -55,3 +55,9 @@ nest generate controller
 ```bash
 nest generate service
 ```
+
+### New Module
+
+```bash
+nest generate module
+```
