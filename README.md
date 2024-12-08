@@ -61,3 +61,9 @@ nest generate service
 ```bash
 nest generate module
 ```
+
+### New Class
+
+```bash
+nest generate class coffees/dto/create-coffee.dto --no-spec
+```
