@@ -77,3 +77,13 @@ nest generate module
 ```bash
 nest generate class coffees/dto/create-coffee.dto --no-spec
 ```
+
+### Docker PostgeSQL DB
+
+```bash
+docker-compose up db -d
+```
+
+```bash
+docker-compose down
+```
