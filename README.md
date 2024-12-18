@@ -78,6 +78,10 @@ nest generate module
 nest generate class coffees/dto/create-coffee.dto --no-spec
 ```
 
+```bash
+nest generate class coffees/entities/flavor.entity --no-spec
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
