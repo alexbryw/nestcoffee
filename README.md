@@ -99,3 +99,25 @@ docker-compose up db -d
 ```bash
 docker-compose down
 ```
+
+### TypeORM migration
+
+Config file: typeorm-cli.config.ts
+
+Create migration up/down(undo) file:
+
+```bash
+npx typeorm migration:create src/migrations/CoffeeRefactor
+```
+
+Build first
+npm run build
+
+Run migration(s)
+npx typeorm migration:run -d dist/typeorm-cli.config
+
+Undo migration(s)
+npx typeorm migration:revert -d dist/typeorm-cli.config
+
+TypeOrm generate migrations automatically
+npx typeorm migration:generate src/migrations/SchemaSync -d dist/typeorm-cli.config
