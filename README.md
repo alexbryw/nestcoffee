@@ -82,6 +82,10 @@ nest generate class coffees/dto/create-coffee.dto --no-spec
 nest generate class coffees/entities/flavor.entity --no-spec
 ```
 
+```bash
+nest g class common/dto/pagination-query.dto --no-spec
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
