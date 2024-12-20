@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, Scope } from '@nestjs/common';
 import { CoffeesController } from './coffees.controller';
 import { CoffeesService } from './coffees.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -20,6 +20,7 @@ import { Connection } from 'typeorm';
         console.log('Async factory');
         return coffeeBrands;
       },
+      scope: Scope.TRANSIENT,
       inject: [Connection],
     },
   ],
