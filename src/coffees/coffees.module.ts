@@ -14,7 +14,7 @@ import { COFFEE_BRANDS } from './coffees.constants';
     CoffeesService,
     {
       provide: COFFEE_BRANDS,
-      useValue: ['zoėgas', 'nescafe'],
+      useFactory: () => ['zoėgas', 'nescafe'],
     },
   ],
   exports: [CoffeesService],
