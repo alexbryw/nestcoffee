@@ -6,6 +6,7 @@ import { Coffee } from './entities/coffees.entity';
 import { Flavor } from './entities/flavor.entity/flavor.entity';
 import { Event } from 'src/events/entities/event.entity/event.entity';
 import { COFFEE_BRANDS } from './coffees.constants';
+import { Connection } from 'typeorm';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Coffee, Flavor, Event])],
@@ -14,7 +15,12 @@ import { COFFEE_BRANDS } from './coffees.constants';
     CoffeesService,
     {
       provide: COFFEE_BRANDS,
-      useFactory: () => ['zoėgas', 'nescafe'],
+      useFactory: async (connection: Connection): Promise<string[]> => {
+        const coffeeBrands = await Promise.resolve(['zoėgas', 'nescafe']);
+        console.log('Async factory');
+        return coffeeBrands;
+      },
+      inject: [Connection],
     },
   ],
   exports: [CoffeesService],
