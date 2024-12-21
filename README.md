@@ -54,6 +54,12 @@ npm i class-validator class-transformer
 npm i @nestjs/mapped-types
 ```
 
+### Config package for .env
+
+```bash
+npm i @nestjs/config
+```
+
 ### New Controller
 
 ```bash
