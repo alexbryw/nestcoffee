@@ -54,10 +54,19 @@ npm i class-validator class-transformer
 npm i @nestjs/mapped-types
 ```
 
+### Other packages:
+
 ### Config package for .env
 
 ```bash
 npm i @nestjs/config
+```
+
+### Schema validation of .env vars
+
+```bash
+npm install @hapi/joi
+npm install --save-dev @types/hapi__joi
 ```
 
 ### New Controller
