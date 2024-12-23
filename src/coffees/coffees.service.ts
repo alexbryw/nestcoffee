@@ -43,6 +43,7 @@ export class CoffeesService {
   }
 
   async findOne(id: string) {
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     const coffee = await this.coffeeRepository.findOne({
       where: { id: +id },
       relations: {
