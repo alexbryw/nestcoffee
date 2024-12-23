@@ -111,6 +111,12 @@ nest g class events/entities/event.entity --no-spec
 nest g filter common/filters/http-exception
 ```
 
+### New Guard
+
+```bash
+nest g guard common/guards/api-key
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
