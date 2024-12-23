@@ -105,6 +105,12 @@ nest g class common/dto/pagination-query.dto --no-spec
 nest g class events/entities/event.entity --no-spec
 ```
 
+### New Filter
+
+```bash
+nest g filter common/filters/http-exception
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
