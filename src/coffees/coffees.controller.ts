@@ -15,6 +15,7 @@ import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto/paginati
 import { Public } from 'src/common/decorators/public.decorator';
 import { ParseIntPipe } from 'src/common/pipes/parse-int/parse-int.pipe';
 import { Protocol } from 'src/common/decorators/protocol.decorator';
+import { ApiResponse } from '@nestjs/swagger';
 
 @Controller('coffees')
 export class CoffeesController {
@@ -22,6 +23,7 @@ export class CoffeesController {
     console.log('CoffeesController created');
   }
 
+  @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Public()
   @Get()
   findAll(
