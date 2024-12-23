@@ -117,6 +117,12 @@ nest g filter common/filters/http-exception
 nest g guard common/guards/api-key
 ```
 
+### New Interceptor
+
+```bash
+nest g interceptor common/interceptors/wrap-response
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
