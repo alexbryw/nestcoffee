@@ -123,6 +123,12 @@ nest g guard common/guards/api-key
 nest g interceptor common/interceptors/wrap-response
 ```
 
+### New Pipe
+
+```bash
+nest g pipe common/pipes/parse-int
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
