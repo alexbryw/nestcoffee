@@ -129,6 +129,12 @@ nest g interceptor common/interceptors/wrap-response
 nest g pipe common/pipes/parse-int
 ```
 
+### New Middleware
+
+```bash
+nest g middleware common/middleware/logging
+```
+
 ### Docker PostgeSQL DB
 
 ```bash
