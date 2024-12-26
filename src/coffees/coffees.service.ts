@@ -1,5 +1,5 @@
 import {
-  Inject,
+  //Inject,
   //HttpException,
   //HttpStatus,
   Injectable,
@@ -11,11 +11,12 @@ import { DataSource, Repository } from 'typeorm';
 import { CreateCoffeeDto } from './dto/create-coffee.dto/create-coffee.dto';
 import { UpdateCoffeeDto } from './dto/update-coffee.dto/update-coffee.dto';
 import { Flavor } from './entities/flavor.entity/flavor.entity';
-import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto/pagination-query.dto';
-import { Event } from 'src/events/entities/event.entity/event.entity';
-import { COFFEE_BRANDS } from './coffees.constants';
-import { ConfigType } from '@nestjs/config';
-import coffeesConfig from './config/coffees.config';
+import { PaginationQueryDto } from '../common/dto/pagination-query.dto/pagination-query.dto';
+
+import { Event } from '../events/entities/event.entity/event.entity';
+//import { COFFEE_BRANDS } from './coffees.constants';
+//import { ConfigType } from '@nestjs/config';
+//import coffeesConfig from './config/coffees.config';
 
 @Injectable()
 export class CoffeesService {
@@ -25,12 +26,12 @@ export class CoffeesService {
     @InjectRepository(Flavor)
     private readonly flavorRepository: Repository<Flavor>,
     private readonly dataSource: DataSource,
-    @Inject(COFFEE_BRANDS) coffeeBrands: string[],
-    @Inject(coffeesConfig.KEY)
-    private coffeesConfiguration: ConfigType<typeof coffeesConfig>,
+    //@Inject(COFFEE_BRANDS) coffeeBrands: string[],
+    //@Inject(coffeesConfig.KEY)
+    //private coffeesConfiguration: ConfigType<typeof coffeesConfig>,
   ) {
     console.log('CoffeesService instantiated');
-    console.log(coffeesConfiguration.foo);
+    //console.log(coffeesConfiguration.foo);
   }
 
   findAll(paginationQuery: PaginationQueryDto) {
