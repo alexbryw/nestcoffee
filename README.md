@@ -21,6 +21,17 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## MongoDB docker
+
+```bash
+# start detached
+docker-compose up -d
+
+# down
+docker-compose down
+
+```
+
 ## Run tests
 
 ```bash
