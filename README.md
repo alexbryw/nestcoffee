@@ -2,6 +2,10 @@
 
 Nest.JS Coffee API
 
+## Chapter branches
+
+Final chapter 9 with MongoDB can be found on branch: 'chapter_9_mongodb', every chapter has a separate branch.
+
 ## Project setup
 
 ```bash
